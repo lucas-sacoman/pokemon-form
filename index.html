@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Lucas's Form</title>
+
+   <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+   <header>
+      <div class="container"> <!--Title-->
+         <h1 id="title">Pokemon Form</h1>
+         <hr>
+         <p id="subtitle">My first Form for exercise my HTML/CSS</p>
+      </div>
+   </header>
+   <form>
+      <div class="form-group"> <!--Name-->
+         <label for="name">Trainer Name</label>
+         <input 
+            name="name"
+            id="name" 
+            type="text" 
+            placeholder="Enter your name"
+            required
+         />
+      </div>
+     
+      <div class="form-group"> <!--Age-->
+         <label for="email">Age</label>
+         <input 
+         type="text" 
+         name="age" 
+         id="age"
+         placeholder="Age"
+         required
+         />
+      </div>
+
+      <div class="form-group"> <!--Gender-->
+         <p>Gender</p>
+         <select name="gender" id="gender" required>
+            <option disabled selected>Select your gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+         </select>
+      </div>
+
+      <div class="form-group"> <!--Pokemon-->
+         <p>Which pokemon you will choose ?</p>
+         <select name="pokemon-role" id="pokemon-role" required>
+            <option disabled selected value="">Select your pokemon</option>
+            <option value="fire">Charmander 🔥 </option>
+            <option value="leaf">Bulbasaur 🍃  </option>
+            <option value="water">Squirtle 🌊 </option>
+            <option value="normal">Pidgey 🐦 </option>
+            <option value="bug">Caterpie 🐛 </option>
+            <option value="eletric">Pikachu ⛈ </option>
+         </select>
+      </div>
+
+      <div class="form-group"> <!--Region-->
+         <p>Which region would you like to venture into ?</p>
+         <label>
+            <input 
+               type="radio"
+               name="user-generation"
+               class="input-radio"
+               value="kanto"
+               checked
+            />Kanto</label
+         >
+         <label>
+            <input 
+               type="radio"
+               name="user-generation"
+               class="input-radio"
+               value="johto"
+            />Johto</label
+         >
+         <label>
+            <input 
+               type="radio"
+               name="user-generation"
+               class="input-radio"
+               value="hoenn"
+            />Hoenn</label
+         >
+         <label>
+            <input 
+               type="radio"
+               name="user-generation"
+               class="input-radio"
+               value="sinnoh"
+            />Sinnoh</label
+         >
+      </div>
+
+      <div class="form-group"> <!--Legendary Pokemon-->
+         <p>Which of these legendary pokemons will be your guardian ?</p>
+         <select name="legendary-pokemon-role" id="legendary-pokemon-role" required>
+            <option disabled selected value>Select your legendary</option>
+            <option value="articuno">Articuno</option>
+            <option value="zapdos">Zapdos</option>
+            <option value="moltres">Moltres</option>
+            <option value="entei">Entei</option>
+            <option value="suicuine">Suicune</option>
+            <option value="raikou">Raikou</option>
+         </select>
+      </div>
+
+      <div class="form-group form-grid"> <!--Elements-->
+         <p>
+            Which elements do you like best ?
+            <small>(Check all that apply)</small>
+         </p>
+
+         <label>
+            <input 
+               type="checkbox"
+               name="prefer"
+               value="fire"
+               class="input-checkbox"
+            />Fire</label
+         >
+         <label>
+            <input 
+               type="checkbox"
+               name="prefer"
+               value="grass"
+               class="input-checkbox"
+            />Grass</label
+         >
+         <label>
+            <input 
+               type="checkbox"
+               name="prefer"
+               value="water"
+               class="input-checkbox"
+            />Water</label
+         >
+         <label>
+            <input 
+               type="checkbox"
+               name="prefer"
+               value="bug"
+               class="input-checkbox"
+            />Bug</label
+         >
+         <label>
+            <input 
+               type="checkbox"
+               name="prefer"
+               value="normal"
+               class="input-checkbox"
+            />Normal</label
+         >
+         <label>
+            <input 
+               type="checkbox"
+               name="prefer"
+               value="poison"
+               class="input-checkbox"
+            />Poison</label
+         >
+         <label>
+            <input 
+               type="checkbox"
+               name="prefer"
+               value="electric"
+               class="input-checkbox"
+            />Electric</label
+         >
+         <label>
+            <input 
+               type="checkbox"
+               name="prefer"
+               value="ground"
+               class="input-checkbox"
+            />Ground</label
+         >
+         <label>
+            <input 
+               type="checkbox"
+               name="prefer"
+               value="fighting"
+               class="input-checkbox"
+            />Fighting</label
+         >
+         <label>
+            <input 
+               type="checkbox"
+               name="prefer"
+               value="psychic"
+               class="input-checkbox"
+            />Psychic</label
+         >
+         <label>
+            <input 
+               type="checkbox"
+               name="prefer"
+               value="rock"
+               class="input-checkbox"
+            />Rock</label
+         >
+         <label>
+            <input 
+               type="checkbox"
+               name="prefer"
+               value="flying"
+               class="input-checkbox"
+            />Flying</label
+         >
+         <label>
+            <input 
+               type="checkbox"
+               name="prefer"
+               value="ghost"
+               class="input-checkbox"
+            />Ghost</label
+         >
+         <label>
+            <input 
+               type="checkbox"
+               name="prefer"
+               value="ice"
+               class="input-checkbox"
+            />Ice</label
+         >
+         <label>
+            <input 
+               type="checkbox"
+               name="prefer"
+               value="dragon"
+               class="input-checkbox"
+            />Dragon</label
+         >
+         <label>
+            <input 
+               type="checkbox"
+               name="prefer"
+               value="steel"
+               class="input-checkbox"
+            />Steel</label
+         >
+         <label>
+            <input 
+               type="checkbox"
+               name="prefer"
+               value="dark"
+               class="input-checkbox"
+            />Dark</label
+         >
+         <label>
+            <input 
+               type="checkbox"
+               name="prefer"
+               value="fairy"
+               class="input-checkbox"
+            />Fairy</label
+         >
+      </div>
+
+      <div class="form-group">
+         <p>
+            Tell me what your expectation from this journey
+         </p>
+            <textarea
+            type="text-area"
+            name="text-area"
+            id="text-area"
+            class="text-area"
+            placeholder="tell me..."></textarea>
+      </div>
+
+      <div class="form-group"> <!--Button-->
+         <button type="submit" id="submit" class="submit-button">
+            Submit
+         </button>
+      </div>
+   </form>
+</body>
+</html>
